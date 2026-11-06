@@ -42,15 +42,6 @@ pi install /path/to/reply-quote
 
 不弹任何确认框——按快捷键本身即已表明引用意图；插错了按 **⌃Z** 整体撤销。
 
-## 为什么是 ⌃⇧R 而不是 ⌥R
-
-macOS 终端默认把 Option+字母合成特殊字符（如 Option+Shift+R 打出 `‰`），除非手动开启 "Option as Alt"。因此快捷键使用 Ctrl 系：
-
-- **⌃⇧R**：在启用 kitty keyboard protocol 的终端（otty / iTerm2 / VS Code 内置终端等）精确匹配
-- **⌃R**：兼容键。旧式终端里 ⌃⇧R 发出的原始字节与 ⌃R 相同（`0x12`），会被解析为 `ctrl+r`；两个绑定指向同一个处理函数，不会互相干扰
-
-两个键都不与 pi 内置按键冲突。
-
 ## 调试
 
 设置环境变量后重启 pi：
