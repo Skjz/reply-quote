@@ -1,0 +1,19 @@
+{
+  "name": "pi-reply-quote",
+  "version": "1.0.0",
+  "description": "Pi 扩展：鼠标选中文字 → ⌃⇧R 插入编号引用块到输入框，直接输入回复（quote and reply）",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "quote",
+    "reply"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skjz/reply-quote.git"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  }
+}
